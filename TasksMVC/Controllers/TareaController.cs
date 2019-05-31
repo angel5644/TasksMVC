@@ -10,7 +10,6 @@ namespace TasksMVC.Controllers
 {
     public class TareaController : Controller
     {
-        // Continuar aquí, resolver problema de guardar tareas temporalmente
         private AdministradorTareas administradorTareas;
 
         public TareaController()
