@@ -111,22 +111,8 @@ namespace TasksMVC.Services
 
         public bool Remover(int id)
         {
-            // Obtener tareas
-            var tareasActuales = this.ObtenerTodas();
-
-            // Obtener tarea a completar
-            var tarea = tareasActuales.Where(t => t.Id == id).FirstOrDefault();
-
-            // Validar si existe
-            if (tarea != null)
-            {
-                // Remover tarea
-                tareasActuales.Remove(tarea);
-
-                _session[TareasNombreSesion] = tareasActuales;
-            }
-
-            return false;
+            // Implementar el remover una tarea por id
+            throw new NotImplementedException();
         }
     }
 }

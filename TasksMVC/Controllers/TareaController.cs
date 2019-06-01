@@ -34,22 +34,16 @@ namespace TasksMVC.Controllers
         [HttpPost]
         public ActionResult Agregar(Tarea tarea)
         {
-            if (ModelState.IsValid)
-            {
-                // Agregar la nueva tarea
-                administradorTareas.Agregar(tarea);
+            // Agregar la nueva tarea
+            administradorTareas.Agregar(tarea);
 
-                return RedirectToAction("Listar");
-            }
-
-            return View(tarea);
+            return RedirectToAction("Listar");
         }
 
         [HttpGet]
         public ActionResult Completar(int id)
         {
             // Completar tarea
-            administradorTareas.Completar(id);
 
             return RedirectToAction("Listar");
         }
