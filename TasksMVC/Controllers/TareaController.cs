@@ -8,6 +8,7 @@ using TasksMVC.Services;
 
 namespace TasksMVC.Controllers
 {
+    [HandleError]
     public class TareaController : Controller
     {
         private AdministradorTareas administradorTareas;
@@ -44,6 +45,7 @@ namespace TasksMVC.Controllers
         public ActionResult Completar(int id)
         {
             // Completar tarea
+            administradorTareas.Completar(id);
 
             return RedirectToAction("Listar");
         }
@@ -51,7 +53,7 @@ namespace TasksMVC.Controllers
         [HttpGet]
         public ActionResult Remover(int id)
         {
-            // Remover tarea
+            // Remover tarea, no implementada
             administradorTareas.Remover(id);
 
             return RedirectToAction("Listar");

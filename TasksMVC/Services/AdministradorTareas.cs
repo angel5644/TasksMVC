@@ -26,29 +26,29 @@ namespace TasksMVC.Services
             new Tarea()
             {
                 Id = 1,
-                Titulo = "Crear tarea",
-                AsignadaA = "Victor",
+                Titulo = "Pre-requisitos",
+                AsignadaA = "Angel",
                 Completada = false
             },
             new Tarea()
             {
                 Id = 2,
-                Titulo = "Listar tareas",
-                AsignadaA = "Victor",
+                Titulo = "Conceptos básicos",
+                AsignadaA = "Angel",
                 Completada = false
             },
             new Tarea()
             {
                 Id = 3,
-                Titulo = "Completar tarea",
-                AsignadaA = "Victor",
+                Titulo = "Agregando nuestro proyecto de prueba",
+                AsignadaA = "Angel",
                 Completada = false
             },
             new Tarea()
             {
                 Id = 4,
-                Titulo = "Remover tarea",
-                AsignadaA = "Victor",
+                Titulo = "Agregando nuestra primera prueba",
+                AsignadaA = "Angel",
                 Completada = false
             }
         };

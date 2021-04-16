@@ -1,13 +1,12 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Error</title>
-</head>
-<body>
-    <hgroup>
-        <h1>Error.</h1>
-        <h2>An error occurred while processing your request.</h2>
-    </hgroup>
-</body>
-</html>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Ocurrió un error inesperado";
+}
+
+<div class="row">
+    <div class="col s12 m12 l12">
+        <h2>Oops! Ocurrió un error inesperado</h2>
+        <p>Esto es muy vergonzoso, lo lamentamos, esperemos que no vuelva a pasar ...</p>
+        <a href="/Tarea/Listar">Regresar a inicio</a>
+    </div>
+</div>
